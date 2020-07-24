@@ -1,0 +1,22 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- You write code for this content block in another file -->
+        {% block content %}
+            <!-- Adds the header partial -->
+            {% include "partials/header.njk" %}
+            <!-- Adds the footer partial -->
+            {% include "partials/footer.njk" %}
+        {% endblock %}
+        <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+        <script src="./contentful.js"></script>
+    </body>
+</html>
